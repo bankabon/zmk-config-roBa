@@ -91,10 +91,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                          &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans         &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &kp LANG6      &trans   &trans                          &kp F12
             >;
         };
 
@@ -102,8 +102,8 @@
             bindings = <
 &kp N1                      &kp NUMBER_2          &kp NUMBER_3    &kp NUMBER_4       &kp NUMBER_5                                                  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8     &kp N9                 &kp N0
 &kp LEFT_BRACKET            &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp DOUBLE_QUOTES  &kp APOSTROPHE  &kp LC(LA(SINGLE_QUOTE))      &kp SEMICOLON   &kp COLON     &kp EQUAL     &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp QUESTION    &kp EXCLAMATION    &kp AT_SIGN     &kp EQUAL                     &kp UNDERSCORE  &kp ASTERISK  &kp UNDER     &kp LEFT_BRACE   &kp RIGHT_BRACE        &kp BACKSLASH
-&trans                      &trans                &trans          &trans             &trans          &trans                        &trans          &trans                                                              &kp PIPE
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1       &kp QUESTION    &kp EXCLAMATION    &kp AT_SIGN     &kp EQUAL                     &kp UNDERSCORE  &kp ASTERISK  &kp PLUS      &kp SLASH        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans                      &trans                &trans          &trans             &trans          &trans                        &kp LANG4       &trans                                                              &kp PIPE
             >;
         };
 
