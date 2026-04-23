@@ -33,12 +33,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_COMMAND>,
                 <&macro_press>,
-                <&mkp LCLK>,
-                <&macro_tap>,
                 <&kp LEFT_COMMAND>,
-                <&macro_release>;
+                <&macro_tap>,
+                <&mkp LCLK>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "NEW_TAB";
         };
