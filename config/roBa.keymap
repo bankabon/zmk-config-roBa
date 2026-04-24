@@ -8,6 +8,11 @@
     quick-tap-ms = <0>;
 };
 
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <200>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
