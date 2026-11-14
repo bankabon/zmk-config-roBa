@@ -33,7 +33,17 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        // J + K 同時押しでマウスレイヤー(5)へ。戻るときはMOUSEレイヤーの右下 &to 0
+        combo_mouse {
+            timeout-ms = <50>;
+            key-positions = <18 19>;
+            layers = <0 1>;
+            bindings = <&to 5>;
+        };
+    };
 
     macros {
         new_tab: new_tab {
