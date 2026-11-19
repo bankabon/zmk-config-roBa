@@ -60,6 +60,20 @@
 
             label = "NEW_TAB";
         };
+
+        comment_out: comment_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp QUESTION>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "COMMENT_OUT";
+        };
     };
 
     keymap {
@@ -119,7 +133,7 @@
         MOUSE {
             bindings = <
 &trans   &kp ESC         &kp LEFT_COMMAND  &kp RIGHT_CONTROL  &trans                            &trans            &trans     &trans    &mkp MB4  &trans
-&kp TAB  &kp LEFT_SHIFT  &kp LG(QUESTION)  &kp LC(UP_ARROW)   &kp LEFT_ALT  &trans      &trans  &kp LC(UP_ARROW)  &new_tab   &mkp MB1  &mkp MB2  &mo 6
+&kp TAB  &kp LEFT_SHIFT  &comment_out      &kp LC(UP_ARROW)   &kp LEFT_ALT  &trans      &trans  &kp LC(UP_ARROW)  &new_tab   &mkp MB1  &mkp MB2  &mo 6
 &trans   &trans          &trans            &trans             &trans        &trans      &trans  &trans            &kp SPACE  &trans    &mkp MB5  &trans
 &trans   &trans          &trans            &trans             &trans        &trans      &trans  &trans                                           &to 0
             >;
